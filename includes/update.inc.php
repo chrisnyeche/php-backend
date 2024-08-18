@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         // Prepare the SQL statement with named parameters
-        $sql = "UPDATE users SET username=:username, email=:email, password=:password WHERE id=3;";
+        $sql = "UPDATE users SET username=:username, email=:email, password=:password WHERE user_id=3;";
         $stmt = $conn->prepare($sql);
 
         // Bind the parameters to the statement
