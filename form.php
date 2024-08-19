@@ -28,6 +28,20 @@
             </form>
         </div>
 
+        <!-- Sign In-->
+        <div class="container">
+            <h3>Sign In Form</h3>
+            <form action="" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Input your username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" class="btn-info" value="Login">
+            </form>
+        </div>
+
         <!-- Update -->
         <div class="container">
             <h3>Update Form</h3>
@@ -58,6 +72,7 @@
                 <input type="submit" class="btn-delete" value="Delete">
             </form>
         </div>
+        
     </div>
 
 </body>

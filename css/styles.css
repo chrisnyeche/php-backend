@@ -25,7 +25,9 @@ h3 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
+    font-weight: bolder;
 }
+
 label {
     display: block;
     font-weight: bold;
@@ -70,6 +72,15 @@ input[type="submit"] {
     background-color: #a71d2a;
 }
 
+.btn-info{
+    background-color: #ffc107;
+    color: rgb(19, 16, 16);
+}
+
+.btn-info:hover{
+    background-color: #d39e00;
+}
+
 .btn-update{
     background-color: #28A745;
     color: white;
@@ -78,3 +89,4 @@ input[type="submit"] {
 .btn-update:hover{
     background-color: #1e7e34;
 }
+
