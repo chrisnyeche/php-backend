@@ -6,13 +6,18 @@ ini_set('session.use_only_cookies', 1);
 
 session_set_cookie_params([
     'lifetime' => 1800, // Lifetime of 30 minutes
+<<<<<<< HEAD
     'samesite' => 'Strict', // Site attribute set to Strict
+=======
+    'samesite' => 'Strict', // Session ID attribute set to Strict
+>>>>>>> 16917dbfd9faf9bf6121665e07ecbd81200a1f78
     'secure' => true, // Use secure cookies instead of HTTP
     'httponly' => true, // Use HTTP only cookies
     'path' => '/', // Path to root directory
     'domain' => $_SERVER['SERVER_NAME'] // Name of the domain to connect
 ]);
 
+<<<<<<< HEAD
 session_start();
 
 
@@ -97,3 +102,9 @@ echo "Appropriate cost found: " . $cost;
 
 
 ?>
+=======
+
+session_start();
+
+?>
+>>>>>>> 16917dbfd9faf9bf6121665e07ecbd81200a1f78

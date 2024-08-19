@@ -1,5 +1,10 @@
 <?php 
+<<<<<<< HEAD
 require_once './config.php'; // Load configuration file 
+=======
+require_once('config.php');
+
+>>>>>>> 16917dbfd9faf9bf6121665e07ecbd81200a1f78
 ?>
 
 <!DOCTYPE html>
