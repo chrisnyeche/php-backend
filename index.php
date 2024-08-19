@@ -1,3 +1,7 @@
+<?php 
+require_once './config.php'; // Load configuration file 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +17,7 @@
     <div class="container">
         <h1>Welcome to the Home Page</h1>
         <?php
+        session_start();
         if (isset($_GET['signup']) && $_GET['signup'] == 'success') {
             echo "<p class='success-message'>Sign Up Successful!</p>";
         } else {
