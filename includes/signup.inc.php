@@ -1,22 +1,24 @@
 <?php
-// Include the database connection
-require_once 'dbh.inc.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form data
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hash the password
+// Ensuring server request method 
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+$_POST['username'] = $username;
+$_POST['email'] = $email;
+$_POST['password'] = $password;
 
-    try {
-  
-    } catch (PDOException $e) {
-        // Handle errors
-        echo "Error: " . $e->getMessage();
-    }
-} else {
-    header("Location: ../signup.php");
-    die();
+    
+try {
+    require_once('./dbh.inc.php');
+    require_once('./signup_model.inc.php');
+    require_once('./signup_contr.inc.php');
+
+    
+
+} catch (PDOException) {
+    die('Error' . $e->getMessage());
 }
 
-
+}else{
+    header('Location ../form.php'); // if users did not access the page the right method
+    die();
+};

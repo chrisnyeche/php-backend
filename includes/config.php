@@ -1,8 +1,8 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('session.use_strict_mode', 1);
-ini_set('session.use_only_cookies', 1);
+ini_set('display_errors', 1); // Display errors for debugging
+ini_set('session.use_strict_mode', 1); // Use strict mode for session cookies
+ini_set('session.use_only_cookies', 1); // Use only cookies for session
 
 session_set_cookie_params([
     'lifetime' => 1800, // Lifetime of 30 minutes
@@ -16,6 +16,16 @@ session_set_cookie_params([
 
 session_start();
 
+
+function regenerateSessionId()
+{
+    // Regenerate session ID to prevent fixation attacks
+    session_regenerate_id(true);
+
+    // Update 'last_regeneration' to the current timestamp
+    $_SESSION['last_regeneration'] = time();
+}
+
 // Check if 'last_regeneration' is set in the session
 if (!isset($_SESSION['last_regeneration'])) {
     // If not set, initialize it with the current timestamp
@@ -25,13 +35,4 @@ if (!isset($_SESSION['last_regeneration'])) {
     if (time() - $_SESSION['last_regeneration'] > 1800) {
         regenerateSessionId();
     }
-}
-
-function regenerateSessionId()
-{
-    // Regenerate session ID to prevent fixation attacks
-    session_regenerate_id(true);
-
-    // Update 'last_regeneration' to the current timestamp
-    $_SESSION['last_regeneration'] = time();
 }

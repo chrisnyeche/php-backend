@@ -14,7 +14,7 @@
         <!-- Sign up -->
         <div class="container">
             <h3>Sign Up Form</h3>
-            <form action="includes/formhandler.inc.php" method="post">
+            <form action="includes/signup.inc.php" method="post">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
 
