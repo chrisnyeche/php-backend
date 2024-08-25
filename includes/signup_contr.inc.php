@@ -19,10 +19,22 @@ function is_email_valid(string $email)
     } else {
         return false; // The email is invalid
     }
-}
+};
 
-function is_username_taken(object $pdo, string $username) {
-if (getUsername($pdo, $username){
+function is_username_taken(object $pdo, $username)
+{
+    if (getUsername($pdo, $username)) {
+        return true;
+    } else {
+        return false;
+    };
+};
 
-});
-}
+function is_email_taken(object $pdo, $email)
+{
+    if (getUsername($pdo, $email)) {
+        return true;
+    } else {
+        return false;
+    };
+};
