@@ -17,7 +17,7 @@ require_once './includes/config.php';
     <div class="forms">
 
         <!-- Sign In-->
-        <!-- <div class="container">
+        <div class="container">
             <h3>Sign In Form</h3>
             <form action="" method="post">
                 <label for="username">Username:</label>
@@ -28,10 +28,10 @@ require_once './includes/config.php';
 
                 <input type="submit" class="btn-info" value="Login">
             </form>
-        </div> -->
+        </div>
 
         <!-- Update -->
-        <!-- <div class="container">
+        <div class="container">
             <h3>Update Form</h3>
             <form action="includes/update.inc.php" method="post">
                 <label for="username">Username:</label>
@@ -45,10 +45,10 @@ require_once './includes/config.php';
 
                 <input type="submit" class="btn-update" value="Update">
             </form>
-        </div> -->
+        </div>
 
         <!-- Delete -->
-        <!-- <div class="container">
+        <div class="container">
             <h3>Delete Form</h3>
             <form action="includes/delete.inc.php" method="post">
                 <label for="username">Username:</label>
@@ -59,7 +59,7 @@ require_once './includes/config.php';
 
                 <input type="submit" class="btn-delete" value="Delete">
             </form>
-        </div> -->
+        </div>
 
     </div>
 
