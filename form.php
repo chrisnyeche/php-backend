@@ -1,3 +1,8 @@
+<?php
+require_once './includes/config.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,25 +16,8 @@
 <body>
     <div class="forms">
 
-        <!-- Sign up -->
-        <div class="container">
-            <h3>Sign Up Form</h3>
-            <form action="includes/signup.inc.php" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <input type="submit" class="btn-signup" value="Sign Up">
-            </form>
-        </div>
-
         <!-- Sign In-->
-        <div class="container">
+        <!-- <div class="container">
             <h3>Sign In Form</h3>
             <form action="" method="post">
                 <label for="username">Username:</label>
@@ -40,10 +28,10 @@
 
                 <input type="submit" class="btn-info" value="Login">
             </form>
-        </div>
+        </div> -->
 
         <!-- Update -->
-        <div class="container">
+        <!-- <div class="container">
             <h3>Update Form</h3>
             <form action="includes/update.inc.php" method="post">
                 <label for="username">Username:</label>
@@ -57,10 +45,10 @@
 
                 <input type="submit" class="btn-update" value="Update">
             </form>
-        </div>
+        </div> -->
 
         <!-- Delete -->
-        <div class="container">
+        <!-- <div class="container">
             <h3>Delete Form</h3>
             <form action="includes/delete.inc.php" method="post">
                 <label for="username">Username:</label>
@@ -71,8 +59,8 @@
 
                 <input type="submit" class="btn-delete" value="Delete">
             </form>
-        </div>
-        
+        </div> -->
+
     </div>
 
 </body>

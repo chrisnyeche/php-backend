@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once('./includes/config.php');
 
 ?>
@@ -14,15 +14,16 @@ require_once('./includes/config.php');
 </head>
 
 <body>
-    
+
     <div class="container">
         <h1>Welcome to the Home Page</h1>
         <?php
         if (isset($_GET['signup']) && $_GET['signup'] == 'success') {
-            echo "<p class='success-message'>Sign Up Successful!</p>";
+            echo isset($_SESSION['message_signup']) ? "<p class='success-message'>" . $_SESSION['message_signup'] . "</p>" : "<p class='success-message'>User created successfully!</p>";
         } else {
             echo "<p class='error-message'>Access Denied</p>
-                  <a href='./form.php' class='button'>Go to Form Page</a>
+                  <p></p><a href='./form.php' class='button'>Go to Form Page</a></p>
+                  <a href='./signup.php' class='button'>Go to Sign up Page</a>
                   <a href='./query.php' class='button'>Go to Find Page</a>";
         }
         ?>

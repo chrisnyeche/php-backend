@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         // Prepare the SQL statement with named parameters
-        $sql = "UPDATE users SET username=:username, email=:email, password=:password WHERE user_id=3;";
-        $stmt = $conn->prepare($sql);
+        $query = "UPDATE users SET username=:username, email=:email, password=:password WHERE id=4;";
+        $stmt = $pdo->prepare($query);
 
         // Bind the parameters to the statement
         $stmt->bindParam(':username', $username);
@@ -29,5 +29,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: " . $e->getMessage();
     }
 } else {
-    header("Location: ../signup.php");
+    header("Location: ../index.php");
 }
