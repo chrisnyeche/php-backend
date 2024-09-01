@@ -19,7 +19,7 @@ require_once './includes/signup_view.inc.php';
 
         <!-- Sign up -->
         <div class="container">
-            <h3>Sign Up Form</h3>
+            <h3>Sign Up</h3>
             <form action="includes/signup.inc.php" method="post">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" value="<?php echo isset($_SESSION['signup_data']['username']) ? htmlspecialchars($_SESSION['signup_data']['username']) : ''; ?>">
@@ -30,8 +30,9 @@ require_once './includes/signup_view.inc.php';
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" value="<?php echo isset($_SESSION['signup_data']['email']) ? htmlspecialchars($_SESSION['signup_data']['email']) : ''; ?>">
 
-                <button class=" btn-signup">Sign Up</button>
+                <button class="btn-signup">Sign Up</button>
             </form>
+            <p style="text-align: center;">Already have an account? <a class="btn-redirect" href="./login.php">Sign In</a></p>
         </div>
 
     </div>

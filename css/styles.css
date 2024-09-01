@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  max-height: 100vh;
+  min-height: 90vh;
 }
 
 .container {
@@ -82,6 +83,15 @@ input[type="submit"] {
 
 .btn-update:hover {
   background-color: #1e7e34;
+}
+
+.btn-redirect {
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .error-message {

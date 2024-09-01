@@ -46,3 +46,16 @@ a.button {
 a.button:hover {
   background-color: #0056b3;
 }
+
+.btn-logout {
+  background-color: #FF5733;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background-color: #C70039;
+}

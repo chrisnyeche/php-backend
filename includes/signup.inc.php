@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             header("Location: ../welcome.php"); // Redirect to welcome page
         }
-    } catch (PDOException) {
+    } catch (PDOException $e) {
         die('Error' . $e->getMessage());
     }
 } else {

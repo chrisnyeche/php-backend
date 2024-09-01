@@ -21,7 +21,7 @@ function is_email_valid(string $email)
     }
 };
 
-function is_username_taken(object $pdo, $username)
+function is_username_taken(object $pdo, string $username)
 {
     if (getUsername($pdo, $username)) {
         return true;

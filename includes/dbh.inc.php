@@ -13,7 +13,3 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-
-
-// Close connection (optional but good practice)
-$conn = null;

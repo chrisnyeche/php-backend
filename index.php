@@ -17,9 +17,11 @@ require_once('./includes/config.php');
 
     <div class="container">
         <h1>Welcome to the Home Page</h1>
-        <p></p><a href='./form.php' class='button'>Go to Form Page</a></p>
+        <p><a href='./form.php' class='button'>Go to Form Page</a>
+            <a href='./query.php' class='button'>Go to Find Page</a>
+        </p>
         <a href='./signup.php' class='button'>Go to Sign up Page</a>
-        <a href='./query.php' class='button'>Go to Find Page</a>
+        <a href='./login.php' class='button'>Go to Login Page</a>
     </div>
 </body>
 

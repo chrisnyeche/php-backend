@@ -1,6 +1,5 @@
 <?php
 require_once('./includes/config.php');
-
 ?>
 
 <!DOCTYPE html>
@@ -19,9 +18,14 @@ require_once('./includes/config.php');
         <h1>Welcome to the Home Page</h1>
         <?php
         if (isset($_SESSION['message_signup'])) {
+            $username = $_SESSION['username'];
             echo "<p class='success-message'>" . $_SESSION['message_signup'] . "</p>";
+            echo "<p> Welcome $username </p>";
+            echo "<form action='includes/signout.inc.php' method='post'>
+                <button type='submit' name='signout' class='btn-logout'>Sign Out</button>
+              </form>";
         } else {
-            echo  "<p class='serror-message'>Access Denied!</p>";
+            echo  "<p class='error-message'>Access Denied!</p>";
         }
         ?>
     </div>
