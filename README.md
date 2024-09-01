@@ -6,10 +6,8 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Folder Structure](#folder-structure)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
+- [Folder Structure](#folder-structure)
 
 ## Introduction
 
@@ -30,7 +28,7 @@ This project is a simple PHP-based user authentication system. It includes funct
 - MySQL 5.x or higher
 - Composer (optional, if dependencies are managed via Composer)
 
-### Steps
+### Usage
 
 1. **Clone the repository:**
    git clone [Clone](https://github.com/your-username/php-user-authentication.git)
@@ -43,11 +41,15 @@ cd php-user-authentication
 - Use the my_database.sql file located in the project to set up your database schema.
 - Run the following command in your MySQL interface:
 
+## Configuration
+
 4.**Configure the project:**
 -Copy config.example.php to config.php and update the database credentials.
 
 5.**Start your local server:**
 -php -S localhost:8000
+
+## Folder structure
 
 6.**Access the application in your browser:**
 -Visit [Local](http://localhost:8000) in your web browser.
